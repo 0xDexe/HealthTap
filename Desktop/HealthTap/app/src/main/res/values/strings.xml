@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">Health Tap</string>
+    <string name="app_name_abr">H</string>
+
+    <!-- Main Activity - General -->
+    <string name="logo_image_description">Image of a fitness journal.</string>
+    <string name="workout_today">Workout</string>
+    <string name="stats">Stats</string>
+    <string name="gallery">Gallery</string>
+    <string name="calendar">Calendar</string>
+
+    <!-- Workout Today Fragment -->
+    <string name="workout_image_description">Image of an apple and a checklist.</string>
+    <string name="exercise_image_description">Image of a type of exercise.</string>
+    <string name="workout_instruction">Add a calisthenic, cardio, or strength\nexercise for the current day.</string>
+
+    <!-- Stats Fragment -->
+    <string name="body_weight">Weight</string>
+    <string name="body_fat">Body Fat</string>
+    <string name="update">Update</string>
+    <string name="no_data">No data points</string>
+    <string name="none">None</string>
+    <string name="update_stat_title">Update body stats: </string>
+    <string name="body_weight_w_units">Body Weight (lbs)</string>
+    <string name="weight_w_units">Weight (lbs)</string>
+    <string name="body_fat_w_units">Body Fat (%)</string>
+
+    <!-- Calendar Fragment -->
+    <string name="sun">SUN</string>
+    <string name="mon">MON</string>
+    <string name="tue">TUE</string>
+    <string name="wed">WED</string>
+    <string name="thu">THU</string>
+    <string name="fri">FRI</string>
+    <string name="sat">SAT</string>
+
+    <!-- Workout Another Day Fragment -->
+    <string name="workout_another_day">Workout Another Day</string>
+
+    <!-- Favorite Fragment -->
+    <string name="favorite_instructions_image_description">Image of hearts.</string>
+    <string name="favorite_image_description">Image of a heart.</string>
+    <string name="favorite_instructions">Favorite an exercise to access \nit quickly in this tab.</string>
+
+    <!-- Custom Fragment -->
+    <string name="custom_instructions_image_description">Image of creativity.</string>
+    <string name="custom_instruction">Access any custom exercise you create \nin this tab.</string>
+    <string name="add_exercise">Add an exercise: </string>
+
+    <!-- Calisthenic Fragment -->
+    <string name="calisthenic_session">Calisthenics</string>
+
+    <!-- Cardio Fragment -->
+    <string name="cardio_session">Cardio</string>
+    <string name="duration">Duration (m)</string>
+    <string name="intensity">Intensity (%)</string>
+    <string name="new_session">New Session</string>
+
+    <!-- Strength Fragment -->
+    <string name="strength_session">Strength</string>
+    <string name="set">Set</string>
+    <string name="rep">Rep(s)</string>
+    <string name="pound">lb</string>
+    <string name="new_set">New Set</string>
+
+    <!-- Session Fragment -->
+    <string name="session">Session</string>
+
+    <!-- Note Dialog Fragment -->
+    <string name="add_note">Add a note: </string>
+    <string name="note">Note</string>
+
+    <!-- Miscellaneous -->
+    <string name="x">"x"</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="search">Search</string>
+    <string name="toast_error_message">Fields cannot be empty.</string>
+
+</resources>

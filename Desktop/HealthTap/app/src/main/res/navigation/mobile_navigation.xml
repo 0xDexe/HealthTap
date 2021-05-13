@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_to_workout_today">
+
+    <fragment
+        android:id="@+id/navigation_to_workout_today"
+        android:name="com.gmail.plai2.ying.HealthTap.ui.workout.WorkoutTodayFragment"
+        android:label="@string/workout_today"
+        tools:layout="@layout/fragment_workout_today">
+        <action
+            android:id="@+id/to_search_exercise"
+            app:destination="@id/navigation_search_exercise"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/to_session"
+            app:destination="@id/navigation_to_session"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_to_stats"
+        android:name="com.gmail.plai2.ying.HealthTap.ui.stats.StatsFragment"
+        android:label="@string/stats"
+        tools:layout="@layout/fragment_stats" />
+
+    <fragment
+        android:id="@+id/navigation_to_calendar"
+        android:name="com.gmail.plai2.ying.HealthTap.ui.calendar.CalendarFragment"
+        android:label="@string/calendar"
+        tools:layout="@layout/fragment_calendar">
+        <action
+            android:id="@+id/to_workout_today"
+            app:destination="@id/navigation_to_workout_today"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/to_workout_another_day"
+            app:destination="@id/navigation_to_workout_another_day"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_search_exercise"
+        android:name="com.gmail.plai2.ying.HealthTap.ui.workout.search_exercise_tabs.SearchExerciseFragment"
+        android:label="@string/strength_session"
+        tools:layout="@layout/fragment_search_exercise">
+        <action
+            android:id="@+id/to_session"
+            app:destination="@id/navigation_to_session"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_to_session"
+        android:name="com.gmail.plai2.ying.HealthTap.ui.workout.session.SessionFragment"
+        android:label="@string/session"
+        tools:layout="@layout/fragment_calisthenics_session">
+        <action
+            android:id="@+id/to_workout_today"
+            app:destination="@id/navigation_to_workout_today"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/to_workout_another_day"
+            app:destination="@id/navigation_to_workout_another_day"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_to_workout_another_day"
+        android:name="com.gmail.plai2.ying.HealthTap.ui.calendar.WorkoutAnotherDayFragment"
+        android:label="@string/workout_another_day"
+        tools:layout="@layout/fragment_calisthenics_session">
+        <action
+            android:id="@+id/to_search_exercise"
+            app:destination="@id/navigation_search_exercise"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/to_session"
+            app:destination="@id/navigation_to_session"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+</navigation>

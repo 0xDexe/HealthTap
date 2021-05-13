@@ -1,0 +1,82 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-android'
+
+android {
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    compileSdkVersion 29
+    buildToolsVersion "29.0.1"
+    defaultConfig {
+        applicationId "com.gmail.plai2.ying.HealthTap"
+        minSdkVersion 26
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    apply plugin: "androidx.navigation.safeargs"
+
+    def androidx_appcompat_version = "1.1.0"
+    def material_version = "1.1.0-alpha10"
+    def room_version = "2.2.0-rc01"
+    def navigation_version = "2.1.0"
+    def lifecycle_version = "2.2.0-alpha02"
+    def chart_version = "v3.1.0"
+    def calendar_version = "0.2.8"
+
+
+    // Androidx Components
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "androidx.appcompat:appcompat:$androidx_appcompat_version"
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    // Android Material Components
+    implementation "com.google.android.material:material:$material_version"
+
+    // Room Components
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+
+    // Navigation Components
+    implementation "androidx.navigation:navigation-fragment:$navigation_version"
+    implementation "androidx.navigation:navigation-ui:$navigation_version"
+
+    // Lifecycle Components
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+
+    // Chart View Components
+    implementation "com.github.PhilJay:MPAndroidChart:$chart_version"
+
+    // Calendar View Components
+    implementation "com.github.kizitonwose:CalendarView:$calendar_version"
+
+    // GSON
+    implementation 'de.gerdi-project:GSON:5.2.5'
+
+    // Test helpers
+    testImplementation "androidx.room:room-testing:$room_version"
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+}
+repositories {
+    mavenCentral()
+}
