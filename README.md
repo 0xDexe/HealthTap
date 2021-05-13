@@ -7,38 +7,39 @@ Personalized Workout Tracker for Android
 [![Build Status][travis-image]][travis-url]
 
 
-One to two paragraph statement about your product and what it does.
-
-
-## Usage example
-
-A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
-
-_For more examples and usage, please refer to the [Wiki][wiki]._
+There are so many workout and diet apps these days that it gets confusing which one to
+choose and which one to use. In terms of market share, the market is saturated with all
+these apps so obviously there is no need for any more fitness apps. <br><br>
+When we check the demographics for these app users, you find that most of these people are young adults
+who are either students or of the working class. The main issue that these people have
+is scheduling their exercises and tracking their progress i.e. how much weight loss
+occurs or how much progress have they made with respect to weights. <br><br>
+That is where our app HealthTap comes in.
 
 
 ## Release History
 
 * 0.2.1
-    * CHANGE: Update docs (module code remains unchanged)
+    * CHANGE: Updated README.md (module code remains unchanged)
 * 0.2.0
-    * CHANGE: Remove `setDefaultXYZ()`
-    * ADD: Add `init()`
+    * CHANGE: Added better colour and text palettes
+    * ADD: Added Notes feature
 * 0.1.1
-    * FIX: Crash when calling `baz()` (Thanks @GenerousContributorName!)
+    * FIX: Crashing issue (Thanks @amartya)
 * 0.1.0
-    * The first proper release
-    * CHANGE: Rename `foo()` to `bar()`
+    * First proper release
+    * Added Login Animation
 * 0.0.1
     * Work in progress
 
+
 ## Meta
 
-Your Name – [@YourTwitter](https://twitter.com/dbader_org) – YourEmail@example.com
-
-Distributed under the XYZ license. See ``LICENSE`` for more information.
+Amartya Mannava - amartyamanava@gmail.com<br>
+Tirth Gandhi- avtirth@gmail.com
 
 [https://github.com/exebo/HealthTap](https://github.com/dbader/)
+
 
 ## Contributing
 
