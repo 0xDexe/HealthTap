@@ -1,7 +1,7 @@
 # HealthTap
 Personalized Workout Tracker for Android
 
-> HealthTap is an interactive workout journal which helps you track your progress
+> HealthTap is an interactive workout journal which helps you track your Body Weight and Body Fat Percentage.
 
 [![NPM Version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
